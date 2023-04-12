@@ -2,11 +2,18 @@
   "name": "next-ui",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=18.14.0",
+    "yarn": ">=1.22.10",
+    "npm": "use-yarn"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier": "prettier --write .",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@types/node": "18.15.11",
@@ -18,5 +25,11 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.5.1",
+    "@commitlint/config-conventional": "^17.4.4",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.7"
   }
 }
