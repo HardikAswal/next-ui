@@ -24,5 +24,6 @@
         "action": "debugWithChrome"
       }
     }
-  ]
+  ],
+  "resolveSourceMapLocations": ["${workspaceFolder}/**", "!**/node_modules/**"]
 }
