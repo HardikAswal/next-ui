@@ -14,11 +14,11 @@ interface ButtonProps {
 export const Button = ({
   type,
   label,
-  size,
-  loading,
-  error,
-  onClick,
-}: ButtonProps) => {
+}: // size,
+// loading,
+// error,
+// onClick,
+ButtonProps) => {
   return (
     <button
       className={poppins.className}
